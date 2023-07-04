@@ -1,43 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>User Registration Form</title>
+  <link rel="stylesheet" href="log.css">
 </head>
 <body>
-  <div class="m">
-  <div class="pp">
-<h2>Log In</h2>
-<form action="login.php" method="POST">
-
-<div class="form-group">
-    <label for="name">Name:</label>
-    <input type="text" name ="name"required>
+  <!-- nav bar  -->
+  <nav class="navbar"> 
+    <img src="fav (2).png" alt="">
+  </nav>
+  <!-- main div for login form -->
+  <div class="login-box">
+    <!-- div for form heading -->
+    <div class="heading-box" id="heading-box">
+      <h1>Log In</h1>
+    </div>
+    <form action="login.php" method="POST" id="form-box">
+      <div class="name-box" id="name-box">
+        <label for="name">Name:</label>
+        <input type="text" name="name" required>
+      </div>
+      <div class="email-box" id="email-box">
+        <label for="email">Email:</label>
+        <input type="email" name="email" required>
+      </div>
+      <div class="password-box" id="password-box">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="submit-box" id="submit-box">
+        <input type="submit" value="SUBMIT">
+      </div>
+    </form>
   </div>
-  <div class="form-group">
-    <label for="email">Email:</label>
-    <input type="email" name ="email"  required>
+  <div class="register">
+    <a href="index.php">Sign In</a>
   </div>
-<div class="form-group">
-<label for="password">Password:</label>
-<input type="password" id="password" name="password"required>
-</div>
-<div class="form-group">
-<input type="submit" value="SUBMIT"><br></div>
-<div class="form-group">
-<input type="reset" value="RESET"><br>
-
-</div>
-
-</form>
-
-</div>
-  <a href="index.php">Sign In</a>
-
-</div>
- 
 </body>
 </html>
-<script>
-  
-</script>
-
